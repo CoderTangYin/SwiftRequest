@@ -1,0 +1,22 @@
+# platform :ios, '9.0'
+
+target 'Networking' do
+  use_frameworks!
+
+
+    pod 'Alamofire'
+    pod 'FMDB', '~> 2.7.2'
+    pod 'RxSwift',    '~> 4.0'
+    pod 'RxCocoa',    '~> 4.0'
+    
+  target 'NetworkingTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'NetworkingUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
